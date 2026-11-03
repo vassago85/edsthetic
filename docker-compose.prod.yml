@@ -1,0 +1,105 @@
+# Production compose for Esthetic Renovations.
+# Install path on server: /opt/edsthetic
+# Reverse proxied by Nginx Proxy Manager: edsthetic.co.za -> 127.0.0.1:8094
+#
+# Put COMPOSE_FILE=docker-compose.prod.yml in .env on the server so bare
+# `docker compose` always targets this file.
+
+name: edsthetic
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    image: edsthetic-app:latest
+    container_name: edsthetic-app
+    restart: unless-stopped
+    depends_on:
+      pgsql:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    env_file:
+      - .env
+    ports:
+      - "8094:80"
+    volumes:
+      - edsthetic-storage:/var/www/html/storage
+    command: ["app"]
+    healthcheck:
+      test: ["CMD", "curl", "-fs", "-o", "/dev/null", "http://127.0.0.1/up"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
+      start_period: 45s
+
+  queue:
+    image: edsthetic-app:latest
+    container_name: edsthetic-queue
+    restart: unless-stopped
+    depends_on:
+      app:
+        condition: service_started
+      pgsql:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    env_file:
+      - .env
+    environment:
+      APP_RUN_MIGRATIONS_ON_BOOT: "false"
+    volumes:
+      - edsthetic-storage:/var/www/html/storage
+    command: ["queue"]
+
+  scheduler:
+    image: edsthetic-app:latest
+    container_name: edsthetic-scheduler
+    restart: unless-stopped
+    depends_on:
+      app:
+        condition: service_started
+      pgsql:
+        condition: service_healthy
+    env_file:
+      - .env
+    environment:
+      APP_RUN_MIGRATIONS_ON_BOOT: "false"
+    volumes:
+      - edsthetic-storage:/var/www/html/storage
+    command: ["scheduler"]
+
+  pgsql:
+    image: postgres:16-alpine
+    container_name: edsthetic-pgsql
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: edsthetic
+      POSTGRES_USER: edsthetic
+      POSTGRES_PASSWORD: "${DB_PASSWORD}"
+    volumes:
+      - edsthetic-pgsql:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U edsthetic -d edsthetic"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    container_name: edsthetic-redis
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - edsthetic-redis:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  edsthetic-pgsql:
+  edsthetic-redis:
+  edsthetic-storage:

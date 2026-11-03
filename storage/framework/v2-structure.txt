@@ -1,0 +1,130 @@
+  A: Skip to content
+  <header>
+      A: Esthetic Renovations
+      BUTTON: Menu
+        LI: What we build
+        LI: Recent work
+        LI: Aftercare
+        LI: Terms
+        LI: Contact
+        LI: WhatsApp us
+  <main id="main">
+    <div id="top" class="hero">
+      <div class="hero-copy">
+        H1: Kitchens, cupboards and carpentry, built in our own workshop.
+        P: We measure on site, build to the millimetre and fit it ourselves. The person who quotes your job is the person who stands in your kitchen on installation day.
+          A: Book a site measure
+          A: See recent work
+        <div class="facts">
+      <div class="hero-photo">
+    <section id="work">
+          H2: What we build
+          P: Everything is made to measure for the room it goes into. No flat-pack carcasses squeezed into a space they weren't designed for.
+            H3: Kitchens
+            P: New kitchens and refits, from carcasses and doors to pantries, islands and tops.
+            H3: Built-in cupboards
+            P: Bedroom wardrobes, walk-ins and linen cupboards planned around how you use them.
+            H3: Bathroom vanities
+            P: Vanities and storage in moisture-resistant board, sealed properly for wet areas.
+            H3: Shelving and studies
+            P: Bookcases, TV units, desks and home offices that fit the wall they're on.
+            H3: General carpentry
+            P: Doors, frames, skirtings, trims and repairs on older houses.
+            H3: Custom pieces
+            P: One-off furniture built from your sketch, a photo or a drawing we do together.
+    <section id="owner">
+      <div class="wrap owner">
+        <div class="photo-slot">
+          H2: Who you'll deal with
+          P: [Owner name] has been building cabinets since [year]. [One or two sentences in their own words: where they trained, why they started the business, what they care about on a job.]
+          P: [Team size] people work out of our workshop in [suburb]. We don't subcontract the joinery, so the standard you see in the samples is the standard you get.
+          P: [Owner name], owner
+    <section id="gallery">
+          H2: Recent work
+          P: Jobs we've finished in the last while. Tap a photo to see it larger.
+          BUTTON: All
+          BUTTON: Kitchens
+          BUTTON: Built-ins
+          BUTTON: Vanities
+          BUTTON: Custom
+        P: Mockup: photo slots only. These fill from the client's own job photos.
+    <dialog id="viewer">
+        BUTTON: Close
+    <section id="process">
+      <div class="wrap process">
+            H2: How a job runs
+            P: Drawings, materials and price are agreed in writing before anything is cut.
+            LI: MeasureWe come to you, measure up and talk through what you need and what it has to hold.
+            LI: QuoteYou get drawings, a materials list, the price and the payment schedule in writing.
+            LI: BuildUnits are cut, assembled and finished in our workshop, not on your floor.
+            LI: FitWe install, adjust every door and drawer, clean up and go through aftercare with you.
+        <aside class="jobsheet">
+          H3: Typical kitchen timeline
+          P: Times depend on the size of the job and board availability. Your quote gives the dates for your job.
+    <section id="aftercare">
+          H2: Looking after your cabinets
+          P: Most damage we get called out for comes from water, steam and the wrong cleaner, not from use. Find your finish below.
+        <div class="care">
+            H3: Melamine and wrapped doors
+              LI: Wipe with a soft cloth and warm water with a drop of mild dish soap, then dry.
+              LI: Wipe spills straight away, especially along joins and edging tape.
+              LI: Keep kettles, air fryers and steam away from the underside of wall units.
+            P: Avoid scourers, abrasive powders, bleach, solvents and leaving water to stand.
+            H3: Spray-painted and lacquered
+              LI: Wipe with a damp microfibre cloth and dry immediately.
+              LI: Leave the paint [X weeks] to cure fully before anything heavier than a damp cloth.
+              LI: Test any new cleaner on the inside of a door first.
+            P: Avoid magic erasers, abrasive pads, ammonia and alcohol-based sprays. They dull the sheen.
+            H3: Solid wood and veneer
+              LI: Dust regularly and wipe with a barely damp cloth along the grain.
+              LI: Use coasters and trivets. Keep pieces out of direct sun where you can.
+              LI: Re-oil oiled finishes every [X months] with the oil we leave you.
+            P: Don't oil a sealed or painted surface, soak veneer edges or use silicone furniture polish.
+            H3: Hinges, runners and daily use
+              LI: Close doors and drawers gently and keep loads within what the runners are rated for.
+              LI: Keep sink and vanity bases dry. Report a plumbing leak as soon as you see it.
+              LI: A dropped door is usually a hinge adjustment. Call us if you're not sure.
+            P: Don't stand on drawers or hang weight from open doors.
+          P: It's on your handover sheet, or send us a photo on WhatsApp. Until you know, stick to a dry, soft cloth and skip the cleaners and oils.
+    <section id="terms">
+          H2: Terms and conditions
+          SUMMARY: Quotes
+          SUMMARY: Deposit and payment
+          P: A deposit of [X]% confirms the order and pays for materials. The balance is due [on completion / per the schedule in your quote]. Goods remain ours until paid in full.
+          SUMMARY: Lead times and installation
+          SUMMARY: Changes to the job
+          P: Changes after sign-off are quoted separately and may move the price and completion date. We start a change once you've approved it in writing.
+          SUMMARY: Natural materials and samples
+          P: Timber and veneer vary in grain and colour and change with age and light. Samples show the type of finish, not an exact match. This variation isn't a defect.
+          SUMMARY: Plumbing, electrical and stone tops
+          P: Your quote states whether plumbing, electrical work and stone tops are included and who arranges them. Where these are done by others, we coordinate with them but don't guarantee their workmanship.
+          SUMMARY: Handover and guarantee
+          SUMMARY: Cancellation
+          P: Tell us as soon as possible if you need to cancel. Materials already cut or ordered, and work already done, are deducted from any refund. Cancellations are handled in line with the Consumer Protection Act.
+          SUMMARY: Your information
+          P: We use your details only to quote, schedule and complete your job, and handle them in line with POPIA. We don't share them with anyone outside the job.
+    <section id="contact">
+      <div class="wrap contact">
+        <div class="contact-copy">
+          H2: Get a quote
+          P: A rough size and a couple of photos of the space are enough to get started.
+            A: WhatsApp us
+            A: Call [number]
+            DT: Email
+            DD: [email]
+            DT: Workshop
+            DD: [address]
+            DT: Hours
+            DD: [days and times]
+            DT: Areas we work in
+            DD: [service area]
+          P: Helpful to have: rough measurements, the finish you like and an idea of budget and timing.
+            LABEL: Name
+            LABEL: Phone or WhatsApp
+            LABEL: Email (optional)
+            LABEL: Suburb
+          LABEL: What do you need? KitchenBuilt-in cupboardsBathroom vanity Shelving or studyGeneral carpentrySomething else
+          LABEL: Tell us about the job
+          BUTTON: Send quote request
+  <footer>
+        A: Terms

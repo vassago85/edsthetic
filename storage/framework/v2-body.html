@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Esthetic Renovations | Cabinet making and carpentry</title>
+<meta name="description" content="Kitchens, built-in cupboards, vanities and carpentry, made to measure in our workshop and fitted by our own team.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400;62..125,500;62..125,600;62..125,800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path d="M3 27V3h6v18h18v6z" fill="#A8723D"/><path d="M13 3h14v14H13z" fill="none" stroke="#ECEAE4" stroke-width="2"/></svg>
+      Esthetic Renovations
+    </a>
+    <button class="menu" type="button" aria-expanded="false" aria-controls="links">Menu</button>
+    <ul class="links" id="links">
+      <li><a href="#work">What we build</a></li>
+      <li><a href="#gallery">Recent work</a></li>
+      <li><a href="#aftercare">Aftercare</a></li>
+      <li><a href="#terms">Terms</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a class="wa" href="https://wa.me/27000000000">WhatsApp us</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+<div class="hero" id="top">
+  <div class="hero-copy">
+    <h1>Kitchens, cupboards and carpentry, built in our own workshop.</h1>
+    <p>We measure on site, build to the millimetre and fit it ourselves. The person who quotes your job is the person who stands in your kitchen on installation day.</p>
+    <div class="btns">
+      <a class="btn btn-light" href="#contact">Book a site measure</a>
+      <a class="btn btn-line" href="#gallery">See recent work</a>
+    </div>
+    <div class="facts">
+      <span><strong>Working in</strong> [service area]</span>
+      <span><strong>Written, itemised</strong> quotes</span>
+      <span><strong>[X]-month</strong> workmanship guarantee</span>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <img src="[IMAGE]" alt="Oak kitchen with navy wall cabinets and a fitted island" width="1400" height="933" fetchpriority="high">
+    <span class="stand-in">Stand-in photo. Replace with a finished job.</span>
+  </div>
+</div>
+<div class="rule" aria-hidden="true"></div>
+
+<section id="work">
+  <div class="wrap">
+    <div class="head">
+      <h2>What we build</h2>
+      <p>Everything is made to measure for the room it goes into. No flat-pack carcasses squeezed into a space they weren't designed for.</p>
+    </div>
+    <div class="services">
+      <div class="service"><h3>Kitchens</h3><p>New kitchens and refits, from carcasses and doors to pantries, islands and tops.</p></div>
+      <div class="service"><h3>Built-in cupboards</h3><p>Bedroom wardrobes, walk-ins and linen cupboards planned around how you use them.</p></div>
+      <div class="service"><h3>Bathroom vanities</h3><p>Vanities and storage in moisture-resistant board, sealed properly for wet areas.</p></div>
+      <div class="service"><h3>Shelving and studies</h3><p>Bookcases, TV units, desks and home offices that fit the wall they're on.</p></div>
+      <div class="service"><h3>General carpentry</h3><p>Doors, frames, skirtings, trims and repairs on older houses.</p></div>
+      <div class="service"><h3>Custom pieces</h3><p>One-off furniture built from your sketch, a photo or a drawing we do together.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="owner">
+  <div class="wrap owner">
+    <div class="photo-slot">Photo: [owner name] in the workshop</div>
+    <div>
+      <h2>Who you'll deal with</h2>
+      <p>[Owner name] has been building cabinets since [year]. [One or two sentences in their own words: where they trained, why they started the business, what they care about on a job.]</p>
+      <p>[Team size] people work out of our workshop in [suburb]. We don't subcontract the joinery, so the standard you see in the samples is the standard you get.</p>
+      <p class="sign">[Owner name], owner</p>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="head">
+      <h2>Recent work</h2>
+      <p>Jobs we've finished in the last while. Tap a photo to see it larger.</p>
+    </div>
+    <div class="filters" role="group" aria-label="Filter recent work">
+      <button type="button" data-f="all" aria-pressed="true">All</button>
+      <button type="button" data-f="kitchen" aria-pressed="false">Kitchens</button>
+      <button type="button" data-f="builtin" aria-pressed="false">Built-ins</button>
+      <button type="button" data-f="vanity" aria-pressed="false">Vanities</button>
+      <button type="button" data-f="custom" aria-pressed="false">Custom</button>
+    </div>
+    <div class="grid" id="grid"></div>
+    <p class="note">Mockup: photo slots only. These fill from the client's own job photos.</p>
+  </div>
+</section>
+
+<dialog id="viewer" aria-labelledby="vtitle">
+  <div class="big" id="vimg">Job photo</div>
+  <div class="meta"><div><strong id="vtitle"></strong><br><span id="vsub"></span></div><button type="button" id="vclose">Close</button></div>
+</dialog>
+
+<section id="process">
+  <div class="wrap process">
+    <div>
+      <div class="head" style="grid-template-columns:1fr">
+        <h2>How a job runs</h2>
+        <p>Drawings, materials and price are agreed in writing before anything is cut.</p>
+      </div>
+      <ol class="steps">
+        <li><h3>Measure</h3><p>We come to you, measure up and talk through what you need and what it has to hold.</p></li>
+        <li><h3>Quote</h3><p>You get drawings, a materials list, the price and the payment schedule in writing.</p></li>
+        <li><h3>Build</h3><p>Units are cut, assembled and finished in our workshop, not on your floor.</p></li>
+        <li><h3>Fit</h3><p>We install, adjust every door and drawer, clean up and go through aftercare with you.</p></li>
+      </ol>
+    </div>
+    <aside class="jobsheet" aria-label="Typical kitchen timeline">
+      <h3>Typical kitchen timeline</h3>
+      <table>
+        <tr><td>Site measure</td><td>[X days] from enquiry</td></tr>
+        <tr><td>Quote and drawings</td><td>[X days]</td></tr>
+        <tr><td>Workshop build</td><td>[X weeks]</td></tr>
+        <tr><td>Installation</td><td>[X days]</td></tr>
+      </table>
+      <p>Times depend on the size of the job and board availability. Your quote gives the dates for your job.</p>
+    </aside>
+  </div>
+</section>
+
+<section id="aftercare">
+  <div class="wrap">
+    <div class="head">
+      <h2>Looking after your cabinets</h2>
+      <p>Most damage we get called out for comes from water, steam and the wrong cleaner, not from use. Find your finish below.</p>
+    </div>
+    <div class="care">
+      <article>
+        <h3>Melamine and wrapped doors</h3>
+        <ul>
+          <li>Wipe with a soft cloth and warm water with a drop of mild dish soap, then dry.</li>
+          <li>Wipe spills straight away, especially along joins and edging tape.</li>
+          <li>Keep kettles, air fryers and steam away from the underside of wall units.</li>
+        </ul>
+        <p class="avoid">Avoid scourers, abrasive powders, bleach, solvents and leaving water to stand.</p>
+      </article>
+      <article>
+        <h3>Spray-painted and lacquered</h3>
+        <ul>
+          <li>Wipe with a damp microfibre cloth and dry immediately.</li>
+          <li>Leave the paint [X weeks] to cure fully before anything heavier than a damp cloth.</li>
+          <li>Test any new cleaner on the inside of a door first.</li>
+        </ul>
+        <p class="avoid">Avoid magic erasers, abrasive pads, ammonia and alcohol-based sprays. They dull the sheen.</p>
+      </article>
+      <article>
+        <h3>Solid wood and veneer</h3>
+        <ul>
+          <li>Dust regularly and wipe with a barely damp cloth along the grain.</li>
+          <li>Use coasters and trivets. Keep pieces out of direct sun where you can.</li>
+          <li>Re-oil oiled finishes every [X months] with the oil we leave you.</li>
+        </ul>
+        <p class="avoid">Don't oil a sealed or painted surface, soak veneer edges or use silicone furniture polish.</p>
+      </article>
+      <article>
+        <h3>Hinges, runners and daily use</h3>
+        <ul>
+          <li>Close doors and drawers gently and keep loads within what the runners are rated for.</li>
+          <li>Keep sink and vanity bases dry. Report a plumbing leak as soon as you see it.</li>
+          <li>A dropped door is usually a hinge adjustment. Call us if you're not sure.</li>
+        </ul>
+        <p class="avoid">Don't stand on drawers or hang weight from open doors.</p>
+      </article>
+    </div>
+    <div class="unsure">
+      <strong>Not sure which finish you have?</strong>
+      <p>It's on your handover sheet, or send us a photo on WhatsApp. Until you know, stick to a dry, soft cloth and skip the cleaners and oils.</p>
+    </div>
+  </div>
+</section>
+
+<section id="terms">
+  <div class="wrap">
+    <div class="head" style="grid-template-columns:1fr"><h2>Terms and conditions</h2></div>
+    <span class="draft">Draft wording. Have it checked before the site goes live.</span>
+    <details>
+      <summary>Quotes</summary>
+      <p>Quotes are valid for <mark>[X] days</mark> and list the work, drawings, dimensions, materials, finish, price and anything excluded. Final measurements are checked on site before manufacture. Board prices can change; we confirm before ordering.</p>
+    </details>
+    <details>
+      <summary>Deposit and payment</summary>
+      <p>A deposit of <mark>[X]%</mark> confirms the order and pays for materials. The balance is due <mark>[on completion / per the schedule in your quote]</mark>. Goods remain ours until paid in full.</p>
+    </details>
+    <details>
+      <summary>Lead times and installation</summary>
+      <p>Lead times run from when the deposit clears and drawings are signed off. You provide clear access, power and a room ready for installation. If other trades or site conditions hold us up, we agree new dates with you before carrying on.</p>
+    </details>
+    <details>
+      <summary>Changes to the job</summary>
+      <p>Changes after sign-off are quoted separately and may move the price and completion date. We start a change once you've approved it in writing.</p>
+    </details>
+    <details>
+      <summary>Natural materials and samples</summary>
+      <p>Timber and veneer vary in grain and colour and change with age and light. Samples show the type of finish, not an exact match. This variation isn't a defect.</p>
+    </details>
+    <details>
+      <summary>Plumbing, electrical and stone tops</summary>
+      <p>Your quote states whether plumbing, electrical work and stone tops are included and who arranges them. Where these are done by others, we coordinate with them but don't guarantee their workmanship.</p>
+    </details>
+    <details>
+      <summary>Handover and guarantee</summary>
+      <p>We walk through the finished job with you and note anything outstanding. Our workmanship is guaranteed for <mark>[X months]</mark> from installation, and hardware carries the manufacturer's warranty. The guarantee doesn't cover damage from water, heat, incorrect cleaning, misuse or alterations by others. Nothing here limits your rights under the Consumer Protection Act.</p>
+    </details>
+    <details>
+      <summary>Cancellation</summary>
+      <p>Tell us as soon as possible if you need to cancel. Materials already cut or ordered, and work already done, are deducted from any refund. Cancellations are handled in line with the Consumer Protection Act.</p>
+    </details>
+    <details>
+      <summary>Your information</summary>
+      <p>We use your details only to quote, schedule and complete your job, and handle them in line with POPIA. We don't share them with anyone outside the job.</p>
+    </details>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact">
+    <div class="contact-copy">
+      <h2>Get a quote</h2>
+      <p>A rough size and a couple of photos of the space are enough to get started.</p>
+      <div class="quick">
+        <a class="btn btn-navy" href="https://wa.me/27000000000">WhatsApp us</a>
+        <a class="btn btn-outline" href="tel:+27000000000">Call [number]</a>
+      </div>
+      <dl>
+        <dt>Email</dt><dd>[email]</dd>
+        <dt>Workshop</dt><dd>[address]</dd>
+        <dt>Hours</dt><dd>[days and times]</dd>
+        <dt>Areas we work in</dt><dd>[service area]</dd>
+      </dl>
+      <p class="helpful">Helpful to have: rough measurements, the finish you like and an idea of budget and timing.</p>
+    </div>
+    <form id="quote" novalidate>
+      <div class="row">
+        <label>Name<input name="name" autocomplete="name" required></label>
+        <label>Phone or WhatsApp<input name="phone" type="tel" autocomplete="tel" required></label>
+      </div>
+      <div class="row">
+        <label>Email <small>(optional)</small><input name="email" type="email" autocomplete="email"></label>
+        <label>Suburb<input name="suburb" autocomplete="address-level2"></label>
+      </div>
+      <label>What do you need?
+        <select name="type">
+          <option>Kitchen</option><option>Built-in cupboards</option><option>Bathroom vanity</option>
+          <option>Shelving or study</option><option>General carpentry</option><option>Something else</option>
+        </select>
+      </label>
+      <label>Tell us about the job<textarea name="msg" rows="4" placeholder="Which room, rough size, the finish you like, when you'd want it done"></textarea></label>
+      <button class="btn btn-navy" type="submit">Send quote request</button>
+      <div id="status" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<div class="rule" aria-hidden="true"></div>
+<footer>
+  <div class="wrap">
+    <span>Esthetic Renovations. Cabinet making and carpentry in [service area].</span>
+    <span>[Registration number] [VAT number] <a href="#terms">Terms</a></span>
+  </div>
+</footer>
+
+<script>
+const menu=document.querySelector(".menu"),links=document.getElementById("links");
+menu.addEventListener("click",()=>{const o=links.classList.toggle("open");menu.setAttribute("aria-expanded",o)});
+links.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{links.classList.remove("open");menu.setAttribute("aria-expanded","false")}));
+
+const jobs=[
+  {t:"Kitchen refit",s:"Kitchen, [suburb]",f:"kitchen",c:"wide tall"},
+  {t:"Main bedroom built-ins",s:"Built-in, [suburb]",f:"builtin",c:"tall"},
+  {t:"Double vanity",s:"Vanity, [suburb]",f:"vanity",c:""},
+  {t:"TV wall unit",s:"Custom, [suburb]",f:"custom",c:""},
+  {t:"Scullery and pantry",s:"Kitchen, [suburb]",f:"kitchen",c:"wide"},
+  {t:"Walk-in closet",s:"Built-in, [suburb]",f:"builtin",c:""},
+  {t:"Study bookcase",s:"Custom, [suburb]",f:"custom",c:""},
+  {t:"Guest bathroom vanity",s:"Vanity, [suburb]",f:"vanity",c:"wide"},
+  {t:"Laundry cupboards",s:"Built-in, [suburb]",f:"builtin",c:""},
+  {t:"Front door and frame",s:"Custom, [suburb]",f:"custom",c:""}
+];
+const grid=document.getElementById("grid");
+grid.innerHTML=jobs.map((j,i)=>`<button type="button" class="tile ${j.c}" data-f="${j.f}" data-i="${i}" aria-label="View ${j.t}"><b>${j.t}</b><span>${j.s}</span></button>`).join("");
+document.querySelectorAll(".filters button").forEach(b=>b.addEventListener("click",()=>{
+  document.querySelectorAll(".filters button").forEach(x=>x.setAttribute("aria-pressed",x===b));
+  grid.querySelectorAll(".tile").forEach(t=>t.hidden=!(b.dataset.f==="all"||t.dataset.f===b.dataset.f));
+}));
+const v=document.getElementById("viewer");
+grid.addEventListener("click",e=>{const t=e.target.closest(".tile");if(!t)return;const j=jobs[t.dataset.i];
+  document.getElementById("vtitle").textContent=j.t;document.getElementById("vsub").textContent=j.s;v.showModal();});
+document.getElementById("vclose").onclick=()=>v.close();
+v.addEventListener("click",e=>{if(e.target===v)v.close()});
+
+document.getElementById("quote").addEventListener("submit",e=>{
+  e.preventDefault();const f=e.target,s=document.getElementById("status");
+  if(!f.name.value.trim()||!f.phone.value.trim()){s.innerHTML='<div class="status">Add your name and a phone number so we can get back to you.</div>';return;}
+  s.innerHTML='<div class="status">Quote request sent. We\'ll be in touch within [X] working days to book a site measure.</div>';f.reset();
+});
+</script>
+</body>
+</html>
